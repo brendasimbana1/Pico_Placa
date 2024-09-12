@@ -10,23 +10,18 @@ public class View_input {
 	}
 
 	public String Placa() {
-		System.out.print("Ingrese su placa: ");
+		System.out.print("Enter your license plate: ");
 		return scanner.nextLine();
 	}
 
 	public String Fecha() {
-		System.out.print("Ingrese la fecha actual: ");
+		System.out.print("Enter the current date: ");
 		return scanner.nextLine();
 	}
 
 	public String Hora() {
-		System.out.print("Ingrese la hora actual: ");
+		System.out.print("Enter the current hour: ");
 		return scanner.nextLine();
 	}
-
-	public void mostrarResultado() {
-		System.out.println("a");
-	}
-
 
 }

@@ -42,12 +42,12 @@ public class Input {
 
 	@Override
 	public String toString() {
-		SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MMM-yyyy"); // Para la fecha
-		SimpleDateFormat hourFormat = new SimpleDateFormat("hh:mm a", Locale.ENGLISH); // Para la hora
+		SimpleDateFormat dateFormat = new SimpleDateFormat("EEEE, dd MMMM yyyy", Locale.ENGLISH);
+		SimpleDateFormat hourFormat = new SimpleDateFormat("hh:mm a", Locale.ENGLISH);
 		String Date = dateFormat.format(date);
 		String Hour = hourFormat.format(hour);
 
-		return "Input [placa=" + placa + ", date=" + Date + ", hour=" + Hour + "]";
+		return "\n\tYour Data\nPlaca= " + placa + "\n" + "Date= " + Date + "\n" + "Hour= " + Hour + "\n";
 	}
 
 }
